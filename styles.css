@@ -400,7 +400,15 @@ section {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.topic-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
 .capability-card,
+.topic-card,
 .advantage-grid article,
 .location-card {
   background: var(--panel);
@@ -408,7 +416,8 @@ section {
   border-radius: 8px;
 }
 
-.capability-card {
+.capability-card,
+.topic-card {
   min-height: 190px;
   padding: 28px;
   transition:
@@ -418,6 +427,7 @@ section {
 }
 
 .capability-card:hover,
+.topic-card:hover,
 .advantage-grid article:hover,
 .location-card:hover {
   border-color: rgba(8, 118, 189, 0.34);
@@ -426,6 +436,7 @@ section {
 }
 
 .capability-card::before,
+.topic-card::before,
 .advantage-grid article::before {
   background: var(--teal);
   content: "";
@@ -436,6 +447,7 @@ section {
 }
 
 .capability-card p,
+.topic-card p,
 .advantage-grid p,
 .location-card p,
 .contact-section p {
@@ -632,6 +644,7 @@ section {
   .intro-band .section-inner,
   .capability-section .section-heading,
   .capability-card,
+  .topic-card,
   .proof-grid,
   .locations-section .section-heading,
   .location-layout,
@@ -686,6 +699,7 @@ section {
 
   .metric-strip,
   .capability-grid,
+  .topic-grid,
   .two-column,
   .proof-grid,
   .location-layout,
@@ -742,6 +756,10 @@ section {
   }
 
   .capability-card {
+    min-height: auto;
+  }
+
+  .topic-card {
     min-height: auto;
   }
 
