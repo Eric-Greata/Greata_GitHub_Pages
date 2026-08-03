@@ -529,6 +529,29 @@ section {
   transform: translateY(-5px);
 }
 
+.product-line-logo {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  height: 78px;
+  justify-content: center;
+  margin-bottom: 18px;
+  padding: 14px 18px;
+}
+
+.product-line-logo.is-dark {
+  background: #12243b;
+  border-color: rgba(18, 36, 59, 0.38);
+}
+
+.product-line-logo img {
+  max-height: 48px;
+  object-fit: contain;
+  width: min(100%, 220px);
+}
+
 .product-line-card span {
   color: var(--teal);
   display: block;
