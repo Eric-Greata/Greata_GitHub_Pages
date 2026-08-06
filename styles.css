@@ -690,6 +690,13 @@ section {
   margin-top: 14px;
 }
 
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
 .team-directory {
   display: grid;
   gap: 34px;
@@ -805,6 +812,40 @@ section {
 
 .team-card-body a {
   color: var(--brand);
+}
+
+.team-page {
+  min-height: 100vh;
+}
+
+.team-page-hero {
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  padding: 142px 48px 58px;
+}
+
+.team-page-hero h1 {
+  color: var(--brand-navy);
+  font-size: 3rem;
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+
+.team-page-hero p:not(.section-kicker) {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  margin-bottom: 0;
+  max-width: 760px;
+}
+
+.team-page-section {
+  background: var(--background);
+  padding-top: 64px;
+}
+
+.team-page-section .team-directory {
+  margin-top: 0;
 }
 
 .contact-section {
@@ -929,6 +970,10 @@ section {
     padding: 128px 22px 48px;
   }
 
+  .team-page-hero {
+    padding: 120px 22px 48px;
+  }
+
   h1 {
     font-size: 3.1rem;
   }
@@ -999,6 +1044,10 @@ section {
 
   .hero {
     min-height: 660px;
+  }
+
+  .team-page-hero h1 {
+    font-size: 2.25rem;
   }
 
   h1 {
