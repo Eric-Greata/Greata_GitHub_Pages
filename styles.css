@@ -490,7 +490,6 @@ section {
 .capability-card p,
 .topic-card p,
 .product-line-card p,
-.microchip-link-panel p,
 .microchip-support-card p,
 .team-card p,
 .advantage-grid p,
@@ -584,25 +583,6 @@ section {
 .product-line-card a:hover::after,
 .product-line-card a:focus::after {
   transform: translateX(4px);
-}
-
-.microchip-link-panel {
-  align-items: center;
-  background: #eef7fb;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: minmax(0, 1fr) auto;
-  margin-top: 24px;
-  padding: 24px;
-}
-
-.microchip-link-panel strong {
-  color: var(--brand-navy);
-  display: block;
-  font-size: 1.12rem;
-  margin-bottom: 8px;
 }
 
 .microchip-page {
@@ -1205,10 +1185,6 @@ section {
 
   .metric-strip {
     margin-top: 54px;
-  }
-
-  .microchip-link-panel {
-    grid-template-columns: 1fr;
   }
 
   .microchip-hero {
