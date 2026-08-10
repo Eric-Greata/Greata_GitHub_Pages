@@ -490,6 +490,8 @@ section {
 .capability-card p,
 .topic-card p,
 .product-line-card p,
+.microchip-link-panel p,
+.microchip-support-card p,
 .team-card p,
 .advantage-grid p,
 .location-card p,
@@ -582,6 +584,196 @@ section {
 .product-line-card a:hover::after,
 .product-line-card a:focus::after {
   transform: translateX(4px);
+}
+
+.microchip-link-panel {
+  align-items: center;
+  background: #eef7fb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 24px;
+  padding: 24px;
+}
+
+.microchip-link-panel strong {
+  color: var(--brand-navy);
+  display: block;
+  font-size: 1.12rem;
+  margin-bottom: 8px;
+}
+
+.microchip-page {
+  min-height: 100vh;
+}
+
+.microchip-hero {
+  background:
+    linear-gradient(rgba(8, 61, 119, 0.9), rgba(11, 31, 57, 0.92)),
+    url("assets/semiconductor-board.jpg") center / cover no-repeat;
+  color: #ffffff;
+  padding: 150px 48px 72px;
+}
+
+.microchip-hero-grid {
+  align-items: center;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.48fr);
+}
+
+.microchip-hero h1 {
+  color: #ffffff;
+  font-size: 3.35rem;
+  line-height: 1.1;
+}
+
+.microchip-hero p:not(.section-kicker) {
+  color: #dbeeff;
+  font-size: 1.14rem;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.microchip-secondary {
+  border-color: rgba(255, 255, 255, 0.82);
+}
+
+.microchip-logo-panel {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 8px;
+  color: var(--brand-navy);
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  padding: 34px;
+}
+
+.microchip-logo-panel img {
+  max-height: 76px;
+  object-fit: contain;
+  width: min(100%, 280px);
+}
+
+.microchip-logo-panel span {
+  color: var(--muted);
+  font-weight: 900;
+  text-align: center;
+}
+
+.microchip-section {
+  background: var(--background);
+}
+
+.microchip-section.is-white {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+}
+
+.microchip-support-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.microchip-support-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-height: 260px;
+  padding: 26px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.microchip-support-card:hover {
+  border-color: rgba(8, 118, 189, 0.34);
+  box-shadow: 0 18px 38px rgba(11, 31, 57, 0.08);
+  transform: translateY(-5px);
+}
+
+.microchip-support-card::before {
+  background: var(--amber);
+  content: "";
+  display: block;
+  height: 4px;
+  margin-bottom: 18px;
+  width: 42px;
+}
+
+.microchip-process-layout {
+  align-items: start;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1fr);
+}
+
+.microchip-process-layout p {
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.microchip-process-list {
+  counter-reset: flow;
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.microchip-process-list li {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: #26374b;
+  display: grid;
+  font-weight: 900;
+  gap: 14px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  padding: 18px;
+}
+
+.microchip-process-list li::before {
+  align-items: center;
+  background: var(--brand);
+  border-radius: 8px;
+  color: #ffffff;
+  content: counter(flow);
+  counter-increment: flow;
+  display: flex;
+  font-weight: 900;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.microchip-cta {
+  background: var(--brand-navy);
+  color: #ffffff;
+}
+
+.microchip-cta h2 {
+  color: #ffffff;
+}
+
+.microchip-cta p {
+  color: #cfdfed;
+  line-height: 1.85;
+  margin-bottom: 0;
+}
+
+.microchip-cta-layout {
+  align-items: center;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .proof-section {
@@ -932,6 +1124,7 @@ section {
   .capability-card,
   .topic-card,
   .product-line-card,
+  .microchip-support-card,
   .team-card,
   .proof-grid,
   .locations-section .section-heading,
@@ -998,6 +1191,10 @@ section {
   .capability-grid,
   .topic-grid,
   .product-line-grid,
+  .microchip-support-grid,
+  .microchip-hero-grid,
+  .microchip-process-layout,
+  .microchip-cta-layout,
   .team-card-grid,
   .two-column,
   .proof-grid,
@@ -1008,6 +1205,18 @@ section {
 
   .metric-strip {
     margin-top: 54px;
+  }
+
+  .microchip-link-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .microchip-hero {
+    padding: 128px 22px 54px;
+  }
+
+  .microchip-hero h1 {
+    font-size: 2.6rem;
   }
 
   .image-panel img {
@@ -1081,6 +1290,18 @@ section {
 
   .product-line-card {
     min-height: auto;
+  }
+
+  .microchip-support-card {
+    min-height: auto;
+  }
+
+  .microchip-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .microchip-cta-layout {
+    align-items: start;
   }
 
   .team-group-heading {

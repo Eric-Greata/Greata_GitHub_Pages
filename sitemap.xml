@@ -5,12 +5,24 @@
     <loc>https://www.greata.com.tw/</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.greata.com.tw/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.greata.com.tw/en/"/>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://www.greata.com.tw/en/</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.greata.com.tw/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.greata.com.tw/en/"/>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.greata.com.tw/microchip/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.greata.com.tw/microchip/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.greata.com.tw/en/microchip/"/>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.greata.com.tw/en/microchip/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.greata.com.tw/microchip/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.greata.com.tw/en/microchip/"/>
+    <lastmod>2026-08-10</lastmod>
   </url>
 </urlset>
